@@ -5,7 +5,7 @@ keyvendor: sap.com
 keylocation: SAP AG
 
 production release: 753
-production patch number: 811
+production patch number: 1110
 production dbslversion: 753.02
 production os: linuxx86_64
 compilation mode: Non-Unicode
