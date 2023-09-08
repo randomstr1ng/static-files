@@ -1,0 +1,15 @@
+[Unit]
+Description=SAP Router Configuration
+After=syslog.target network.target
+
+[Service]
+Type=simple
+RemainAfterExit=yes
+WorkingDirectory=/opt/saprouter
+ExecStart=/opt/saprouter/saprouter -r -G router.log
+ExecStop=/opt/saprouter/saprouter -s
+KillMode=none
+Restart=no
+
+[Install]
+WantedBy=multi-user.target"
