@@ -1,6 +1,6 @@
 [Unit]
 Description=SAP Router Configuration
-After=network-online.target multi-user.target
+#After=network-online.target multi-user.target
 After=syslog.target network.target
 
 [Service]
