@@ -1,5 +1,6 @@
 [Unit]
 Description=SAP Router Configuration
+After=network-online.target multi-user.target
 After=syslog.target network.target
 
 [Service]
@@ -12,4 +13,4 @@ KillMode=none
 Restart=no
 
 [Install]
-WantedBy=multi-user.target"
+WantedBy=multi-user.target
